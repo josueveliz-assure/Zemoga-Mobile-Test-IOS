@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF23CC032B6942AF009E02BA /* Zemoga_Mobile_Test_IOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF23CC022B6942AF009E02BA /* Zemoga_Mobile_Test_IOSApp.swift */; };
+		FF23CC052B6942AF009E02BA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF23CC042B6942AF009E02BA /* ContentView.swift */; };
+		FF23CC072B6942B1009E02BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF23CC062B6942B1009E02BA /* Assets.xcassets */; };
+		FF23CC0A2B6942B1009E02BA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF23CC092B6942B1009E02BA /* Preview Assets.xcassets */; };
+		FF23CC142B6942B2009E02BA /* Zemoga_Mobile_Test_IOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF23CC132B6942B2009E02BA /* Zemoga_Mobile_Test_IOSTests.swift */; };
+		FF23CC1E2B6942B2009E02BA /* Zemoga_Mobile_Test_IOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF23CC1D2B6942B2009E02BA /* Zemoga_Mobile_Test_IOSUITests.swift */; };
+		FF23CC202B6942B2009E02BA /* Zemoga_Mobile_Test_IOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF23CC1F2B6942B2009E02BA /* Zemoga_Mobile_Test_IOSUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FF23CC102B6942B2009E02BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF23CBF72B6942AF009E02BA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF23CBFE2B6942AF009E02BA;
+			remoteInfo = "Zemoga-Mobile-Test-IOS";
+		};
+		FF23CC1A2B6942B2009E02BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF23CBF72B6942AF009E02BA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF23CBFE2B6942AF009E02BA;
+			remoteInfo = "Zemoga-Mobile-Test-IOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FF23CBFF2B6942AF009E02BA /* Zemoga-Mobile-Test-IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Zemoga-Mobile-Test-IOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF23CC022B6942AF009E02BA /* Zemoga_Mobile_Test_IOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zemoga_Mobile_Test_IOSApp.swift; sourceTree = "<group>"; };
+		FF23CC042B6942AF009E02BA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FF23CC062B6942B1009E02BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF23CC092B6942B1009E02BA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FF23CC0F2B6942B2009E02BA /* Zemoga-Mobile-Test-IOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Zemoga-Mobile-Test-IOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF23CC132B6942B2009E02BA /* Zemoga_Mobile_Test_IOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zemoga_Mobile_Test_IOSTests.swift; sourceTree = "<group>"; };
+		FF23CC192B6942B2009E02BA /* Zemoga-Mobile-Test-IOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Zemoga-Mobile-Test-IOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF23CC1D2B6942B2009E02BA /* Zemoga_Mobile_Test_IOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zemoga_Mobile_Test_IOSUITests.swift; sourceTree = "<group>"; };
+		FF23CC1F2B6942B2009E02BA /* Zemoga_Mobile_Test_IOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zemoga_Mobile_Test_IOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF23CBFC2B6942AF009E02BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF23CC0C2B6942B2009E02BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF23CC162B6942B2009E02BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF23CBF62B6942AF009E02BA = {
+			isa = PBXGroup;
+			children = (
+				FF23CC012B6942AF009E02BA /* Zemoga-Mobile-Test-IOS */,
+				FF23CC122B6942B2009E02BA /* Zemoga-Mobile-Test-IOSTests */,
+				FF23CC1C2B6942B2009E02BA /* Zemoga-Mobile-Test-IOSUITests */,
+				FF23CC002B6942AF009E02BA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FF23CC002B6942AF009E02BA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF23CBFF2B6942AF009E02BA /* Zemoga-Mobile-Test-IOS.app */,
+				FF23CC0F2B6942B2009E02BA /* Zemoga-Mobile-Test-IOSTests.xctest */,
+				FF23CC192B6942B2009E02BA /* Zemoga-Mobile-Test-IOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF23CC012B6942AF009E02BA /* Zemoga-Mobile-Test-IOS */ = {
+			isa = PBXGroup;
+			children = (
+				FF23CC022B6942AF009E02BA /* Zemoga_Mobile_Test_IOSApp.swift */,
+				FF23CC042B6942AF009E02BA /* ContentView.swift */,
+				FF23CC062B6942B1009E02BA /* Assets.xcassets */,
+				FF23CC082B6942B1009E02BA /* Preview Content */,
+			);
+			path = "Zemoga-Mobile-Test-IOS";
+			sourceTree = "<group>";
+		};
+		FF23CC082B6942B1009E02BA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FF23CC092B6942B1009E02BA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FF23CC122B6942B2009E02BA /* Zemoga-Mobile-Test-IOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				FF23CC132B6942B2009E02BA /* Zemoga_Mobile_Test_IOSTests.swift */,
+			);
+			path = "Zemoga-Mobile-Test-IOSTests";
+			sourceTree = "<group>";
+		};
+		FF23CC1C2B6942B2009E02BA /* Zemoga-Mobile-Test-IOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FF23CC1D2B6942B2009E02BA /* Zemoga_Mobile_Test_IOSUITests.swift */,
+				FF23CC1F2B6942B2009E02BA /* Zemoga_Mobile_Test_IOSUITestsLaunchTests.swift */,
+			);
+			path = "Zemoga-Mobile-Test-IOSUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF23CBFE2B6942AF009E02BA /* Zemoga-Mobile-Test-IOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF23CC232B6942B2009E02BA /* Build configuration list for PBXNativeTarget "Zemoga-Mobile-Test-IOS" */;
+			buildPhases = (
+				FF23CBFB2B6942AF009E02BA /* Sources */,
+				FF23CBFC2B6942AF009E02BA /* Frameworks */,
+				FF23CBFD2B6942AF009E02BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Zemoga-Mobile-Test-IOS";
+			productName = "Zemoga-Mobile-Test-IOS";
+			productReference = FF23CBFF2B6942AF009E02BA /* Zemoga-Mobile-Test-IOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FF23CC0E2B6942B2009E02BA /* Zemoga-Mobile-Test-IOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF23CC262B6942B2009E02BA /* Build configuration list for PBXNativeTarget "Zemoga-Mobile-Test-IOSTests" */;
+			buildPhases = (
+				FF23CC0B2B6942B2009E02BA /* Sources */,
+				FF23CC0C2B6942B2009E02BA /* Frameworks */,
+				FF23CC0D2B6942B2009E02BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF23CC112B6942B2009E02BA /* PBXTargetDependency */,
+			);
+			name = "Zemoga-Mobile-Test-IOSTests";
+			productName = "Zemoga-Mobile-Test-IOSTests";
+			productReference = FF23CC0F2B6942B2009E02BA /* Zemoga-Mobile-Test-IOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FF23CC182B6942B2009E02BA /* Zemoga-Mobile-Test-IOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF23CC292B6942B2009E02BA /* Build configuration list for PBXNativeTarget "Zemoga-Mobile-Test-IOSUITests" */;
+			buildPhases = (
+				FF23CC152B6942B2009E02BA /* Sources */,
+				FF23CC162B6942B2009E02BA /* Frameworks */,
+				FF23CC172B6942B2009E02BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF23CC1B2B6942B2009E02BA /* PBXTargetDependency */,
+			);
+			name = "Zemoga-Mobile-Test-IOSUITests";
+			productName = "Zemoga-Mobile-Test-IOSUITests";
+			productReference = FF23CC192B6942B2009E02BA /* Zemoga-Mobile-Test-IOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF23CBF72B6942AF009E02BA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					FF23CBFE2B6942AF009E02BA = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					FF23CC0E2B6942B2009E02BA = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = FF23CBFE2B6942AF009E02BA;
+					};
+					FF23CC182B6942B2009E02BA = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = FF23CBFE2B6942AF009E02BA;
+					};
+				};
+			};
+			buildConfigurationList = FF23CBFA2B6942AF009E02BA /* Build configuration list for PBXProject "Zemoga-Mobile-Test-IOS" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF23CBF62B6942AF009E02BA;
+			productRefGroup = FF23CC002B6942AF009E02BA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF23CBFE2B6942AF009E02BA /* Zemoga-Mobile-Test-IOS */,
+				FF23CC0E2B6942B2009E02BA /* Zemoga-Mobile-Test-IOSTests */,
+				FF23CC182B6942B2009E02BA /* Zemoga-Mobile-Test-IOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF23CBFD2B6942AF009E02BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF23CC0A2B6942B1009E02BA /* Preview Assets.xcassets in Resources */,
+				FF23CC072B6942B1009E02BA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF23CC0D2B6942B2009E02BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF23CC172B6942B2009E02BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF23CBFB2B6942AF009E02BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF23CC052B6942AF009E02BA /* ContentView.swift in Sources */,
+				FF23CC032B6942AF009E02BA /* Zemoga_Mobile_Test_IOSApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF23CC0B2B6942B2009E02BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF23CC142B6942B2009E02BA /* Zemoga_Mobile_Test_IOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF23CC152B6942B2009E02BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF23CC1E2B6942B2009E02BA /* Zemoga_Mobile_Test_IOSUITests.swift in Sources */,
+				FF23CC202B6942B2009E02BA /* Zemoga_Mobile_Test_IOSUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF23CC112B6942B2009E02BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF23CBFE2B6942AF009E02BA /* Zemoga-Mobile-Test-IOS */;
+			targetProxy = FF23CC102B6942B2009E02BA /* PBXContainerItemProxy */;
+		};
+		FF23CC1B2B6942B2009E02BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF23CBFE2B6942AF009E02BA /* Zemoga-Mobile-Test-IOS */;
+			targetProxy = FF23CC1A2B6942B2009E02BA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FF23CC212B6942B2009E02BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FF23CC222B6942B2009E02BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF23CC242B6942B2009E02BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Zemoga-Mobile-Test-IOS/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jovel.Zemoga-Mobile-Test-IOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF23CC252B6942B2009E02BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Zemoga-Mobile-Test-IOS/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jovel.Zemoga-Mobile-Test-IOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FF23CC272B6942B2009E02BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jovel.Zemoga-Mobile-Test-IOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Zemoga-Mobile-Test-IOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Zemoga-Mobile-Test-IOS";
+			};
+			name = Debug;
+		};
+		FF23CC282B6942B2009E02BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jovel.Zemoga-Mobile-Test-IOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Zemoga-Mobile-Test-IOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Zemoga-Mobile-Test-IOS";
+			};
+			name = Release;
+		};
+		FF23CC2A2B6942B2009E02BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jovel.Zemoga-Mobile-Test-IOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Zemoga-Mobile-Test-IOS";
+			};
+			name = Debug;
+		};
+		FF23CC2B2B6942B2009E02BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jovel.Zemoga-Mobile-Test-IOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Zemoga-Mobile-Test-IOS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF23CBFA2B6942AF009E02BA /* Build configuration list for PBXProject "Zemoga-Mobile-Test-IOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF23CC212B6942B2009E02BA /* Debug */,
+				FF23CC222B6942B2009E02BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF23CC232B6942B2009E02BA /* Build configuration list for PBXNativeTarget "Zemoga-Mobile-Test-IOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF23CC242B6942B2009E02BA /* Debug */,
+				FF23CC252B6942B2009E02BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF23CC262B6942B2009E02BA /* Build configuration list for PBXNativeTarget "Zemoga-Mobile-Test-IOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF23CC272B6942B2009E02BA /* Debug */,
+				FF23CC282B6942B2009E02BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF23CC292B6942B2009E02BA /* Build configuration list for PBXNativeTarget "Zemoga-Mobile-Test-IOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF23CC2A2B6942B2009E02BA /* Debug */,
+				FF23CC2B2B6942B2009E02BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF23CBF72B6942AF009E02BA /* Project object */;
+}
