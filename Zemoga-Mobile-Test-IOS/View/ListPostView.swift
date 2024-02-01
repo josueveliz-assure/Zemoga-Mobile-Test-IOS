@@ -53,7 +53,7 @@ struct ListPostView: View {
                                     print("Action")
                                 }))
                         ) {
-                            RowPostView(post: post)
+                            RowPostView(postContent: post.body, isFavorite: post.isFavorite)
                                 .swipeActions(edge: .trailing) {
                                     Button {
                                         print("Favorite")
