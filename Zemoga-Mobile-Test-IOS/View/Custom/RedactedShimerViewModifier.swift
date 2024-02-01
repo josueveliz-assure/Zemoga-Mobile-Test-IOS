@@ -7,6 +7,7 @@
 
 import SwiftUI
 import Foundation
+import Shimmer
 
 public struct RedactAndShimmerViewModifier: ViewModifier {
   private let condition: Bool
