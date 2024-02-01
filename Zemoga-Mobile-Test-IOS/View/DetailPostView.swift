@@ -8,9 +8,19 @@
 import SwiftUI
 
 struct DetailPostView: View {
-    var post: Post
-    var user: User
-    var comments: [Comment]
+    var postContent: String
+    var isFavorite: Bool
+    var userId: Int
+    var postId: Int
+    
+    private var detailPostViewModel = DetailPostViewModel()
+    
+    init(postContent: String, isFavorite: Bool, userId: Int, postId: Int) {
+        self.postContent = postContent
+        self.isFavorite = isFavorite
+        self.userId = userId
+        self.postId = postId
+    }
     
     var body: some View {
         VStack(spacing: 10) {
@@ -23,7 +33,7 @@ struct DetailPostView: View {
             }
             .padding()
             
-            Text("\(post.body)")
+            Text("\(postContent)")
                 .foregroundStyle(.primary)
             
             
@@ -37,29 +47,29 @@ struct DetailPostView: View {
             }
             VStack(alignment: .leading) {
                 HStack {
-                    Text("\(user.name)")
+                    Text("\(detailPostViewModel.user?.name ?? "")")
                         .font(.title2)
                         .fontWeight(.semibold)
                         .padding(.leading)
                     Spacer()
                 }
                 HStack {
-                    Text("\(user.email)")
+                    Text("\(detailPostViewModel.user?.email ?? "")")
                         .font(.body)
                         .foregroundColor(Color.black.opacity(0.7))
                         .padding(.leading)
                     Spacer()
                 }
                 HStack {
-                    Text("\(user.phone)")
+                    Text("\(detailPostViewModel.user?.phone ?? "")")
                         .fontWeight(.light)
                         .foregroundColor(Color.black.opacity(0.5))
                         .padding(.leading)
                     Spacer()
                 }
                 HStack {
-                    if let url = URL(string: "http://\(user.website)") {
-                        Link("\(user.website)", destination: url)
+                    if let url = URL(string: "http://\(detailPostViewModel.user?.website ?? "")") {
+                        Link("\(detailPostViewModel.user?.website ?? "")", destination: url)
                             .underline()
                             .foregroundColor(.blue)
                             .padding(.leading)
@@ -80,21 +90,23 @@ struct DetailPostView: View {
             }
             .background(Color.gray.opacity(0.3))
             
-            List(comments, id: \.id) { comment in
+            List(detailPostViewModel.comments, id: \.id) { comment in
                 Text("\(comment.body)")
             }
             .listStyle(.plain)
+        }
+        .redactShimmer(condition: detailPostViewModel.isLoading)
+        .task {
+            await detailPostViewModel.getDetailData(userId: userId, postId: postId)
         }
     }
 }
 
 #Preview {
     DetailPostView(
-        post: Post(userID: 1, id: 1, title: "sunt aut facere repellat provident occaecati excepturi optio reprehenderit", body: "sunt aut facere repellat provident occaecati excepturi optio reprehenderit sunt aut facere repellat provident occaecati excepturi optio reprehenderit sunt aut facere repellat provident occaecati excepturi optio reprehenderit", isFavorite: true),
-        user: User(id: 1, name: "Josue", username: "josueveliz", email: "josue@gmail.com", address: Address(street: "street", suite: "suite", city: "city", zipcode: "zipcode", geo: Geo(lat: "lat", lng: "lng")), phone: "phone", website: "website", company: Company(name: "name", catchPhrase: "catchPhrase", bs: "bs")),
-        comments: [
-            Comment(postID: 1, id: 1, name: "Josue", email: "jso@gmail.com", body: "Body sfsdf sdfqwsdf asdasd asq lorem asdad dfasd sdfsdf se q"),
-            Comment(postID: 1, id: 2, name: "Josue", email: "asdf@gmail.com", body: "lorem asdad dfasd sdfsdf se q lorem asdad dfasd sdfsdf se q lorem a")
-        ]
+        postContent: "sunt aut facere repellat provident occaecati excepturi optio reprehenderit sunt aut facere repellat provident occaecati excepturi optio reprehenderit sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+        isFavorite: true,
+        userId: 1,
+        postId: 1
     )
 }
