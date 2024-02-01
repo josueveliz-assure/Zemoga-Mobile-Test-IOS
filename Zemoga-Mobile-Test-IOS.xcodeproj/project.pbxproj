@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF07566B2B6C500A00EB9BC9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF07566A2B6C500A00EB9BC9 /* HomeView.swift */; };
 		FF1DEF832B6985E0006DF719 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1DEF822B6985E0006DF719 /* ApiManager.swift */; };
 		FF1DEF852B698C5F006DF719 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1DEF842B698C5F006DF719 /* Post.swift */; };
 		FF1DEF872B698CF0006DF719 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1DEF862B698CF0006DF719 /* Comment.swift */; };
@@ -27,7 +28,6 @@
 		FF4B1E132B6A9CE400CC8A20 /* CustomNavLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4B1E122B6A9CE400CC8A20 /* CustomNavLinkView.swift */; };
 		FF4B1E152B6AA18800CC8A20 /* CustomNavBarPreferencesKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4B1E142B6AA18800CC8A20 /* CustomNavBarPreferencesKeys.swift */; };
 		FF4B1E172B6AC5B200CC8A20 /* CustomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4B1E162B6AC5B200CC8A20 /* CustomColor.swift */; };
-		FF4B1E192B6AD8A600CC8A20 /* ListPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4B1E182B6AD8A600CC8A20 /* ListPostView.swift */; };
 		FF4B1E1F2B6B00CC00CC8A20 /* ButtonProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4B1E1E2B6B00CC00CC8A20 /* ButtonProperties.swift */; };
 		FF5D13542B69A3C600D30897 /* DetailPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5D13532B69A3C600D30897 /* DetailPostView.swift */; };
 		FF84CB482B6BEA8C00080CAD /* Shimmer in Frameworks */ = {isa = PBXBuildFile; productRef = FF84CB472B6BEA8C00080CAD /* Shimmer */; };
@@ -55,6 +55,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FF07566A2B6C500A00EB9BC9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		FF1DEF822B6985E0006DF719 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 		FF1DEF842B698C5F006DF719 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		FF1DEF862B698CF0006DF719 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
@@ -77,7 +78,6 @@
 		FF4B1E122B6A9CE400CC8A20 /* CustomNavLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavLinkView.swift; sourceTree = "<group>"; };
 		FF4B1E142B6AA18800CC8A20 /* CustomNavBarPreferencesKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavBarPreferencesKeys.swift; sourceTree = "<group>"; };
 		FF4B1E162B6AC5B200CC8A20 /* CustomColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColor.swift; sourceTree = "<group>"; };
-		FF4B1E182B6AD8A600CC8A20 /* ListPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPostView.swift; sourceTree = "<group>"; };
 		FF4B1E1E2B6B00CC00CC8A20 /* ButtonProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonProperties.swift; sourceTree = "<group>"; };
 		FF5D13532B69A3C600D30897 /* DetailPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPostView.swift; sourceTree = "<group>"; };
 		FF84CB4B2B6C18F500080CAD /* PostListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewModel.swift; sourceTree = "<group>"; };
@@ -189,8 +189,8 @@
 			children = (
 				FF4B1E092B6A8BAC00CC8A20 /* Custom */,
 				FF1DEF8A2B69919D006DF719 /* RowPostView.swift */,
-				FF4B1E182B6AD8A600CC8A20 /* ListPostView.swift */,
 				FF5D13532B69A3C600D30897 /* DetailPostView.swift */,
+				FF07566A2B6C500A00EB9BC9 /* HomeView.swift */,
 				FF84CB4F2B6C369600080CAD /* InfiniteList.swift */,
 			);
 			path = View;
@@ -379,10 +379,10 @@
 				FF84CB502B6C369600080CAD /* InfiniteList.swift in Sources */,
 				FF84CB4E2B6C20A100080CAD /* RedactedShimerViewModifier.swift in Sources */,
 				FF23CC052B6942AF009E02BA /* ContentView.swift in Sources */,
+				FF07566B2B6C500A00EB9BC9 /* HomeView.swift in Sources */,
 				FF5D13542B69A3C600D30897 /* DetailPostView.swift in Sources */,
 				FF1DEF892B698E39006DF719 /* User.swift in Sources */,
 				FF4B1E172B6AC5B200CC8A20 /* CustomColor.swift in Sources */,
-				FF4B1E192B6AD8A600CC8A20 /* ListPostView.swift in Sources */,
 				FF4B1E0F2B6A9A0800CC8A20 /* CustomNavView.swift in Sources */,
 				FF4B1E132B6A9CE400CC8A20 /* CustomNavLinkView.swift in Sources */,
 				FF84CB4C2B6C18F500080CAD /* PostListViewModel.swift in Sources */,
