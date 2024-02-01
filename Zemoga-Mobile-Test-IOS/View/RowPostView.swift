@@ -8,20 +8,21 @@
 import SwiftUI
 
 struct RowPostView: View {
-    var post: Post
+    var postContent: String
+    var isFavorite: Bool
     
     var body: some View {
         HStack {
-            Text("\(post.body)")
+            Text("\(postContent)")
                 .font(.title3)
                 .foregroundStyle(.primary)
             Spacer()
-            Image(systemName: post.isFavorite ? "star.fill" : "star")
+            Image(systemName: isFavorite ? "star.fill" : "star")
                 .foregroundStyle(.yellow)
         }
     }
 }
 
 #Preview {
-    RowPostView(post: Post(userID: 1, id: 1, title: "sunt aut facere repellat provident occaecati excepturi optio reprehenderit", body: "Body", isFavorite: true))
+    RowPostView(postContent: "sunt aut facere repellat provident occaecati excepturi optio reprehenderit", isFavorite: true)
 }
