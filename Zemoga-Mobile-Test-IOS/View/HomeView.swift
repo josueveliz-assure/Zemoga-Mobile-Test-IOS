@@ -24,8 +24,8 @@ struct HomeView: View {
         CustomNavView {
             VStack {
                 Picker("Tabs", selection: $selectedTab) {
-                    Text("All").tag(0)
-                    Text("Favorites").tag(1)
+                    Text("tab-option-all").tag(0)
+                    Text("tab-option-favorites").tag(1)
                 }
                 .padding(.top, 8)
                 .padding([.leading, .trailing])
@@ -52,7 +52,7 @@ struct HomeView: View {
                                 }
                                 .customNavigationBackgroundColor("#27AE60")
                                 .customNavigationForegroundColor("#FBFCFC")
-                                .customNavigationTitle("Posts")
+                                .customNavigationTitle("home-title")
                                 .customNavigationButtonProperties(
                                     ButtonProperties(
                                         systemImage: post.isFavorite ? "star.fill" : "star",
@@ -79,14 +79,14 @@ struct HomeView: View {
                                     showingLateralAlert = true
                                     postIdToDelete = post.id
                                 } label: {
-                                    Label("Delete", systemImage: "trash")
+                                    Label("delete-text", systemImage: "trash")
                                 }
                                 .tint(.red)
                             }.alert(isPresented: $showingLateralAlert) {
                                 Alert(
-                                    title: Text("Delete Post"),
-                                    message: Text("Are you sure you want to delete this post?"),
-                                    primaryButton: .destructive(Text("Delete")) {
+                                    title: Text("delete-post"),
+                                    message: Text("question-delete-post \(String(postIdToDelete))"),
+                                    primaryButton: .destructive(Text("delete-text")) {
                                         postListViewModel.removePost(postId: postIdToDelete)
                                     },
                                     secondaryButton: .cancel()
@@ -126,7 +126,7 @@ struct HomeView: View {
                         showingAlert = true
                     }
                 ) {
-                    Text("Delete All")
+                    Text("delete-all")
                         .font(.title2)
                 }
                 .padding(.top)
@@ -135,9 +135,9 @@ struct HomeView: View {
                 .foregroundColor(.white)
                 .alert(isPresented: $showingAlert) {
                     Alert(
-                        title: Text("Delete All"),
-                        message: Text("Are you sure you want to delete all posts?"),
-                        primaryButton: .destructive(Text("Delete")) {
+                        title: Text("delete-all"),
+                        message: Text("question-delete-all"),
+                        primaryButton: .destructive(Text("delete-text")) {
                             postListViewModel.deleteData()
                             isDeleted = true
                         },
@@ -145,7 +145,7 @@ struct HomeView: View {
                     )
                 }
             }
-            .customNavigationTitle("Posts")
+            .customNavigationTitle("home-title")
             .customNavigationBackButtonHidden(true)
             .customNavigationBackgroundColor("#27AE60")
             .customNavigationForegroundColor("#FBFCFC")

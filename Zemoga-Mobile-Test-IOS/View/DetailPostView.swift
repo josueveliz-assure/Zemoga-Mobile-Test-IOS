@@ -16,7 +16,7 @@ struct DetailPostView: View {
     var body: some View {
         VStack(spacing: 10) {
             HStack {
-                Text("Description")
+                Text("detail-description")
                     .font(.title2)
                     .bold()
                     .foregroundStyle(.primary)
@@ -30,7 +30,7 @@ struct DetailPostView: View {
             
             
             HStack {
-                Text("User")
+                Text("detail-user")
                     .font(.title2)
                     .bold()
                     .foregroundStyle(.primary)
@@ -73,7 +73,7 @@ struct DetailPostView: View {
             .padding(.bottom, 10)
             
             HStack {
-                Text("Comments")
+                Text("detail-comments")
                     .font(.title3)
                     .foregroundStyle(.primary)
                     .frame(maxHeight: 1)
