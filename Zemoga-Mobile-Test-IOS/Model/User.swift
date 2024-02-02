@@ -13,6 +13,32 @@ struct User: Codable {
     let address: Address
     let phone, website: String
     let company: Company
+    
+    static let sample = [
+        User(
+            id: 1,
+            name: "Josue",
+            username: "Josue Veliz",
+            email: "josue.vel@gmail.com",
+            address: Address(
+                street: "Street",
+                suite: "Suite",
+                city: "City",
+                zipcode: "Zipcode",
+                geo: Geo(
+                    lat: "lat",
+                    lng: "lng"
+                )
+            ),
+            phone: "123456789",
+            website: "www.zemoga.com",
+            company: Company(
+                name: "Zemoga",
+                catchPhrase: "Catch Phrase",
+                bs: "bs"
+            )
+        )
+    ]
 }
 
 struct Address: Codable {
