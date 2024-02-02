@@ -10,17 +10,8 @@ import SwiftUI
 struct DetailPostView: View {
     var postContent: String
     var isFavorite: Bool
-    var userId: Int
-    var postId: Int
-    
-    private var detailPostViewModel = DetailPostViewModel()
-    
-    init(postContent: String, isFavorite: Bool, userId: Int, postId: Int) {
-        self.postContent = postContent
-        self.isFavorite = isFavorite
-        self.userId = userId
-        self.postId = postId
-    }
+    var user: User
+    var comments: [Comment]
     
     var body: some View {
         VStack(spacing: 10) {
@@ -35,6 +26,7 @@ struct DetailPostView: View {
             
             Text("\(postContent)")
                 .foregroundStyle(.primary)
+                .padding([.leading, .trailing])
             
             
             HStack {
@@ -47,29 +39,29 @@ struct DetailPostView: View {
             }
             VStack(alignment: .leading) {
                 HStack {
-                    Text("\(detailPostViewModel.user?.name ?? "")")
+                    Text("\(user.name)")
                         .font(.title2)
                         .fontWeight(.semibold)
                         .padding(.leading)
                     Spacer()
                 }
                 HStack {
-                    Text("\(detailPostViewModel.user?.email ?? "")")
+                    Text("\(user.email)")
                         .font(.body)
                         .foregroundColor(Color.black.opacity(0.7))
                         .padding(.leading)
                     Spacer()
                 }
                 HStack {
-                    Text("\(detailPostViewModel.user?.phone ?? "")")
+                    Text("\(user.phone)")
                         .fontWeight(.light)
                         .foregroundColor(Color.black.opacity(0.5))
                         .padding(.leading)
                     Spacer()
                 }
                 HStack {
-                    if let url = URL(string: "http://\(detailPostViewModel.user?.website ?? "")") {
-                        Link("\(detailPostViewModel.user?.website ?? "")", destination: url)
+                    if let url = URL(string: "http://\(user.website)") {
+                        Link("\(user.website)", destination: url)
                             .underline()
                             .foregroundColor(.blue)
                             .padding(.leading)
@@ -90,14 +82,10 @@ struct DetailPostView: View {
             }
             .background(Color.gray.opacity(0.3))
             
-            List(detailPostViewModel.comments, id: \.id) { comment in
+            List(comments, id: \.id) { comment in
                 Text("\(comment.body)")
             }
             .listStyle(.plain)
-        }
-        .redactShimmer(condition: detailPostViewModel.isLoading)
-        .task {
-            await detailPostViewModel.getDetailData(userId: userId, postId: postId)
         }
     }
 }
@@ -106,7 +94,29 @@ struct DetailPostView: View {
     DetailPostView(
         postContent: "sunt aut facere repellat provident occaecati excepturi optio reprehenderit sunt aut facere repellat provident occaecati excepturi optio reprehenderit sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
         isFavorite: true,
-        userId: 1,
-        postId: 1
+        user: User(
+            id: 1,
+            name: "Josue",
+            username: "Josue Veliz",
+            email: "josue.vel@gmail.com",
+            address: Address(
+                street: "Street",
+                suite: "Suite",
+                city: "City",
+                zipcode: "Zipcode",
+                geo: Geo(
+                    lat: "lat",
+                    lng: "lng"
+                )
+            ),
+            phone: "123456789",
+            website: "www.zemoga.com",
+            company: Company(
+                name: "Zemoga",
+                catchPhrase: "Catch Phrase",
+                bs: "bs"
+            )
+        ),
+        comments: []
     )
 }

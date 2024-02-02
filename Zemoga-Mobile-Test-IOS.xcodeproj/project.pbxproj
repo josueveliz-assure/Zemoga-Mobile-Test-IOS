@@ -33,7 +33,6 @@
 		FF84CB482B6BEA8C00080CAD /* Shimmer in Frameworks */ = {isa = PBXBuildFile; productRef = FF84CB472B6BEA8C00080CAD /* Shimmer */; };
 		FF84CB4C2B6C18F500080CAD /* PostListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF84CB4B2B6C18F500080CAD /* PostListViewModel.swift */; };
 		FF84CB4E2B6C20A100080CAD /* RedactedShimerViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF84CB4D2B6C20A100080CAD /* RedactedShimerViewModifier.swift */; };
-		FF84CB502B6C369600080CAD /* InfiniteList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF84CB4F2B6C369600080CAD /* InfiniteList.swift */; };
 		FF84CB522B6C435B00080CAD /* DetailPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF84CB512B6C435B00080CAD /* DetailPostViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -82,7 +81,6 @@
 		FF5D13532B69A3C600D30897 /* DetailPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPostView.swift; sourceTree = "<group>"; };
 		FF84CB4B2B6C18F500080CAD /* PostListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewModel.swift; sourceTree = "<group>"; };
 		FF84CB4D2B6C20A100080CAD /* RedactedShimerViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedactedShimerViewModifier.swift; sourceTree = "<group>"; };
-		FF84CB4F2B6C369600080CAD /* InfiniteList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteList.swift; sourceTree = "<group>"; };
 		FF84CB512B6C435B00080CAD /* DetailPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPostViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -191,7 +189,6 @@
 				FF1DEF8A2B69919D006DF719 /* RowPostView.swift */,
 				FF5D13532B69A3C600D30897 /* DetailPostView.swift */,
 				FF07566A2B6C500A00EB9BC9 /* HomeView.swift */,
-				FF84CB4F2B6C369600080CAD /* InfiniteList.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -376,7 +373,6 @@
 			files = (
 				FF1DEF872B698CF0006DF719 /* Comment.swift in Sources */,
 				FF4B1E112B6A9C5200CC8A20 /* AppNavBarView.swift in Sources */,
-				FF84CB502B6C369600080CAD /* InfiniteList.swift in Sources */,
 				FF84CB4E2B6C20A100080CAD /* RedactedShimerViewModifier.swift in Sources */,
 				FF23CC052B6942AF009E02BA /* ContentView.swift in Sources */,
 				FF07566B2B6C500A00EB9BC9 /* HomeView.swift in Sources */,
