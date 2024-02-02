@@ -58,7 +58,7 @@ extension CustomNavBarView {
     }
     
     private var titleSection: some View {
-        Text(title)
+        Text(LocalizedStringKey(title))
             .font(.title)
             .fontWeight(.semibold)
     }
