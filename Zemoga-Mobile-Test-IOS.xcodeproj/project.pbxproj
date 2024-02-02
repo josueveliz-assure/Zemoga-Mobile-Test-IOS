@@ -34,6 +34,8 @@
 		FF84CB4C2B6C18F500080CAD /* PostListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF84CB4B2B6C18F500080CAD /* PostListViewModel.swift */; };
 		FF84CB4E2B6C20A100080CAD /* RedactedShimerViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF84CB4D2B6C20A100080CAD /* RedactedShimerViewModifier.swift */; };
 		FF84CB522B6C435B00080CAD /* DetailPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF84CB512B6C435B00080CAD /* DetailPostViewModel.swift */; };
+		FF87C6392B6D90980050FD9D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FF87C63B2B6D90980050FD9D /* Localizable.strings */; };
+		FF87C63E2B6DA57B0050FD9D /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF87C63D2B6DA57B0050FD9D /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +84,9 @@
 		FF84CB4B2B6C18F500080CAD /* PostListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewModel.swift; sourceTree = "<group>"; };
 		FF84CB4D2B6C20A100080CAD /* RedactedShimerViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedactedShimerViewModifier.swift; sourceTree = "<group>"; };
 		FF84CB512B6C435B00080CAD /* DetailPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPostViewModel.swift; sourceTree = "<group>"; };
+		FF87C63A2B6D90980050FD9D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FF87C63C2B6D90F40050FD9D /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FF87C63D2B6DA57B0050FD9D /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +194,7 @@
 				FF1DEF8A2B69919D006DF719 /* RowPostView.swift */,
 				FF5D13532B69A3C600D30897 /* DetailPostView.swift */,
 				FF07566A2B6C500A00EB9BC9 /* HomeView.swift */,
+				FF87C63D2B6DA57B0050FD9D /* Launch Screen.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -205,6 +211,7 @@
 		FF23CC332B697F42009E02BA /* Localizable */ = {
 			isa = PBXGroup;
 			children = (
+				FF87C63B2B6D90980050FD9D /* Localizable.strings */,
 			);
 			path = Localizable;
 			sourceTree = "<group>";
@@ -323,6 +330,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = FF23CBF62B6942AF009E02BA;
 			packageReferences = (
@@ -346,6 +354,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF23CC0A2B6942B1009E02BA /* Preview Assets.xcassets in Resources */,
+				FF87C6392B6D90980050FD9D /* Localizable.strings in Resources */,
+				FF87C63E2B6DA57B0050FD9D /* Launch Screen.storyboard in Resources */,
 				FF23CC072B6942B1009E02BA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,12 +436,25 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		FF87C63B2B6D90980050FD9D /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF87C63A2B6D90980050FD9D /* en */,
+				FF87C63C2B6D90F40050FD9D /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		FF23CC212B6942B2009E02BA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -495,6 +518,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -559,6 +583,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -587,6 +612,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
