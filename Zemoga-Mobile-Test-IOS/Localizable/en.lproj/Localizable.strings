@@ -23,3 +23,5 @@
 
 "delete-post" = "Delete Post";
 "question-delete-post %@" = "Are you sure you want to delete this post \"%@\"?";
+
+"no-data" = "No data available";

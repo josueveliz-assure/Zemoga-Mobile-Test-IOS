@@ -13,6 +13,8 @@ import SwiftUI
     var page: Int = 1
     var posts: [Post] = []
     var isFavoriteFilterActive: Bool = false
+    private var filteredPosts: [Post] = []
+    private var temporalPosts: [Post] = []
     
     func getPosts() async {
         defer { isLoading = false }
@@ -60,10 +62,6 @@ import SwiftUI
         }
     }
     
-    func filterPosts() -> [Post] {
-        return isFavoriteFilterActive ? posts.filter { $0.isFavorite } : posts
-    }
-    
     func reload() async {
         page = 1
         posts.removeAll()
@@ -92,4 +90,27 @@ import SwiftUI
     func updateFavoritePost(post: Binding<Post>) {
         post.wrappedValue.isFavorite.toggle()
     }
+    
+    func filterPost() {
+        if isFavoriteFilterActive {
+            filteredPosts = posts.filter { $0.isFavorite }
+            temporalPosts = posts
+            posts = filteredPosts
+        } else {
+            posts = temporalPosts
+            temporalPosts = []
+        }
+    }
+    /*
+     if isFavoriteFilterActive {
+         filteredPosts = posts.filter { $0.isFavorite }
+         temporalPosts.append(contentsOf: posts)
+         posts.removeAll()
+         posts.append(contentsOf: filteredPosts)
+     } else {
+         posts.removeAll()
+         posts.append(contentsOf: temporalPosts)
+         temporalPosts.removeAll()
+     }
+     */
 }
