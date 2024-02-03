@@ -14,6 +14,7 @@
 "tab-option-favorites" = "Favoritos";
 
 "home-title" = "Publicaciones";
+"home-individual-title" = "Publicación";
 
 "delete-all" = "Eliminar Todo";
 "question-delete-all" = "¿Estás seguro de que quieres eliminar todas las publicaciones?";
