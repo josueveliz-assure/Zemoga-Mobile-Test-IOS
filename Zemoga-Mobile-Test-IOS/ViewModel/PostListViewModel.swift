@@ -78,11 +78,14 @@ import SwiftUI
     
     func removePost(postId: Int) {
         posts.removeAll { $0.id == postId }
-    }
-    
-    func favoritePost(postId: Int) {
-        if let index = posts.firstIndex(where: { $0.id == postId }) {
-            posts[index].isFavorite.toggle()
+        
+        ApiManager.shared.removePost(postId: postId) { result in
+            switch result {
+            case .success:
+                print("Post removed successfully.")
+            case .failure(let error):
+                print("Error removing post: \(error)")
+            }
         }
     }
     
