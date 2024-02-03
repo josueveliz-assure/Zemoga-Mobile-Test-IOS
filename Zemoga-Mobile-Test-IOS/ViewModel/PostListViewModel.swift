@@ -101,16 +101,16 @@ import SwiftUI
             temporalPosts = []
         }
     }
-    /*
-     if isFavoriteFilterActive {
-         filteredPosts = posts.filter { $0.isFavorite }
-         temporalPosts.append(contentsOf: posts)
-         posts.removeAll()
-         posts.append(contentsOf: filteredPosts)
-     } else {
-         posts.removeAll()
-         posts.append(contentsOf: temporalPosts)
-         temporalPosts.removeAll()
-     }
-     */
+    
+    func addPost(post: NewPost) {
+        ApiManager.shared.addPost(post: post) { result in
+            switch result {
+            case .success(let post):
+                print("Post added successfully.")
+                self.posts.append(post)
+            case .failure(let error):
+                print("Error adding post: \(error)")
+            }
+        }
+    }
 }

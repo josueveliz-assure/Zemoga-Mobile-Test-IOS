@@ -187,8 +187,11 @@ struct HomeView: View {
             
             ModalView(
                 isShowing: $showingCreatePost,
-                marginColor: CustomColor(hex: "#f2f2f7").color) {
-                    CreatePostFormView()
+                marginColor: CustomColor(hex: "#f2f2f7").color
+            ) {
+                    CreatePostFormView(postListViewModel: postListViewModel, action: {
+                        showingCreatePost = false
+                    })
             }
         }
     }
