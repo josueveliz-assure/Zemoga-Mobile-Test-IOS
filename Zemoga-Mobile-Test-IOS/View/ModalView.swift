@@ -13,7 +13,7 @@ struct ModalView<Content: View>: View {
     let marginColor: Color
     
     @Binding var isShowing: Bool
-    @State var curHeight: CGFloat = 400
+    @State var curHeight: CGFloat = 700
     
     let minHeight: CGFloat = 400
     let maxHeight: CGFloat = 700
@@ -91,6 +91,6 @@ struct ModalView<Content: View>: View {
 
 #Preview {
     ModalView(isShowing: .constant(true), marginColor: CustomColor(hex: "#f2f2f7").color) {
-        CreatePostFormView()
+        CreatePostFormView(postListViewModel: PostListViewModel(), action: {})
     }
 }
