@@ -10,17 +10,19 @@ import SwiftUI
 struct CreatePostFormView: View {
     @State private var postTitle: String = ""
     @State private var postContent: String = ""
+    var postListViewModel: PostListViewModel
+    var action: () -> Void
     
     var body: some View {
         NavigationStack {
             Form {
-                Section(header: Text("Post Content")) {
-                    TextField("Title", text: $postTitle)
+                Section(header: Text("post-content")) {
+                    TextField("title", text: $postTitle)
                     ZStack(alignment: .topLeading) {
                         TextEditor(text: $postContent)
                             .frame(height: 150)
                         if postContent.isEmpty {
-                            Text("Content")
+                            Text("content")
                                 .foregroundColor(.gray)
                                 .padding(.top, 8)
                                 .padding(.leading, 4)
@@ -29,13 +31,14 @@ struct CreatePostFormView: View {
                 }
             }
             .tint(CustomColor(hex: "#27AE60").color)
-            .navigationTitle("Post")
+            .navigationTitle("home-individual-title")
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button(action: {
-                        print("Save")
+                        postListViewModel.addPost(post: NewPost(userID: 777, title: postTitle, body: postContent))
+                        action()
                     }) {
-                        Text("Save")
+                        Text("save")
                             .font(.title2)
                             .foregroundStyle(.white)
                     }
@@ -51,5 +54,5 @@ struct CreatePostFormView: View {
 }
 
 #Preview {
-    CreatePostFormView()
+    CreatePostFormView(postListViewModel: PostListViewModel(),action: {})
 }

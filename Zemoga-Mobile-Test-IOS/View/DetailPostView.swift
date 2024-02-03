@@ -86,6 +86,13 @@ struct DetailPostView: View {
                 Text("\(comment.body)")
             }
             .listStyle(.plain)
+            
+            if comments.isEmpty {
+                Text("no-data-comments")
+                    .font(.title2)
+                    .padding(.bottom, 150)
+                Spacer()
+            }
         }
     }
 }

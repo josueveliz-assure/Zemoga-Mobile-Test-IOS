@@ -1,4 +1,4 @@
-/* 
+/*
   Localizable.strings
   Zemoga-Mobile-Test-IOS
 
@@ -25,3 +25,12 @@
 "question-delete-post %@" = "¿Estás seguro de que quieres eliminar la publicación \"%@\"?";
 
 "no-data" = "No hay publicaciones";
+
+"no-data-comments" = "No hay comentarios";
+
+"save" = "Guadar";
+
+"post-content" = "Contenido de Publicación";
+
+"title" = "Titulo";
+"content" = "Contenido";
