@@ -13,7 +13,6 @@ struct HomeView: View {
     @Bindable private var postListViewModel = PostListViewModel()
     private var detailPostViewModel = DetailPostViewModel()
     
-    @State private var isFavorite = false
     @State private var isDeleted = false
     @State private var isReload = false
     @State private var isCharge = false
@@ -38,90 +37,91 @@ struct HomeView: View {
                     print("Selected tab: \(selectedTab)")
                 }
                 
-                List {
-                    ForEach($postListViewModel.posts, id: \.id) { $post in
-                        CustomNavLinkView(
-                            destination:
-                                DetailPostView(
-                                    postContent: post.body,
-                                    isFavorite: isFavorite,
-                                    user: detailPostViewModel.user ?? User.sample[0],
-                                    comments: detailPostViewModel.comments
+                ZStack {
+                    List {
+                        ForEach($postListViewModel.posts, id: \.id) { $post in
+                            CustomNavLinkView(
+                                destination:
+                                    DetailPostView(
+                                        postContent: post.body,
+                                        isFavorite: post.isFavorite,
+                                        user: detailPostViewModel.user ?? User.sample[0],
+                                        comments: detailPostViewModel.comments
+                                    )
+                                    .redactShimmer(condition: detailPostViewModel.isLoading)
+                                    .task {
+                                        await detailPostViewModel.getDetailData(userId: post.userID, postId: post.id)
+                                    }
+                                    .customNavigationBackgroundColor("#27AE60")
+                                    .customNavigationForegroundColor("#FBFCFC")
+                                    .customNavigationTitle("home-title")
+                                    .customNavigationButtonProperties(
+                                        ButtonProperties(
+                                            systemImage: post.isFavorite ? "star.fill" : "star",
+                                            action: {
+                                                postListViewModel.updateFavoritePost(post: $post)
+                                            }
+                                        ))
+                            ) {
+                                RowPostView(
+                                    postContent: post.title,
+                                    isFavorite: post.isFavorite
                                 )
-                                .redactShimmer(condition: detailPostViewModel.isLoading)
-                                .task {
-                                    await detailPostViewModel.getDetailData(userId: post.userID, postId: post.id)
+                                .redactShimmer(condition: postListViewModel.isLoading)
+                                .swipeActions(edge: .trailing) {
+                                    Button {
+                                        postListViewModel.updateFavoritePost(post: $post)
+                                    } label: {
+                                        Label("Favorite", systemImage: "star")
+                                    }
+                                    .tint(.yellow)
                                 }
-                                .customNavigationBackgroundColor("#27AE60")
-                                .customNavigationForegroundColor("#FBFCFC")
-                                .customNavigationTitle("home-title")
-                                .customNavigationButtonProperties(
-                                    ButtonProperties(
-                                        systemImage: post.isFavorite ? "star.fill" : "star",
-                                        action: {
-                                            postListViewModel.updateFavoritePost(post: $post)
-                                        }
-                                    ))
-                        ) {
-                            RowPostView(
-                                postContent: post.title,
-                                isFavorite: post.isFavorite
-                            )
-                            .redactShimmer(condition: postListViewModel.isLoading)
-                            .swipeActions(edge: .trailing) {
-                                Button {
-                                    postListViewModel.updateFavoritePost(post: $post)
-                                } label: {
-                                    Label("Favorite", systemImage: "star")
+                                .swipeActions(edge: .leading) {
+                                    Button() {
+                                        showingLateralAlert = true
+                                        postIdToDelete = post.id
+                                    } label: {
+                                        Label("delete-text", systemImage: "trash")
+                                    }
+                                    .tint(.red)
+                                }.alert(isPresented: $showingLateralAlert) {
+                                    Alert(
+                                        title: Text("delete-post"),
+                                        message: Text("question-delete-post \(String(postIdToDelete))"),
+                                        primaryButton: .destructive(Text("delete-text")) {
+                                            postListViewModel.removePost(postId: postIdToDelete)
+                                        },
+                                        secondaryButton: .cancel()
+                                    )
                                 }
-                                .tint(.yellow)
                             }
-                            .swipeActions(edge: .leading) {
-                                Button() {
-                                    showingLateralAlert = true
-                                    postIdToDelete = post.id
-                                } label: {
-                                    Label("delete-text", systemImage: "trash")
-                                }
-                                .tint(.red)
-                            }.alert(isPresented: $showingLateralAlert) {
-                                Alert(
-                                    title: Text("delete-post"),
-                                    message: Text("question-delete-post \(String(postIdToDelete))"),
-                                    primaryButton: .destructive(Text("delete-text")) {
-                                        postListViewModel.removePost(postId: postIdToDelete)
-                                    },
-                                    secondaryButton: .cancel()
-                                )
-                            }
+                            .padding(.vertical, 7)
+                            
                         }
-                        .padding(.vertical, 7)
                         
-                    }
-                    
-                    if !isDeleted {
-                        RowPostView(postContent: Post.sample[0].body, isFavorite: false)
-                            .redactShimmer(condition: true)
-                            .onAppear {
-                                if !isReload || isCharge {
-                                    Task {
-                                        await postListViewModel.populateData()
-                                        isReload = false
-                                        isCharge = true
+                        if !isDeleted {
+                            RowPostView(postContent: Post.sample[0].body, isFavorite: false)
+                                .redactShimmer(condition: true)
+                                .onAppear {
+                                    if !isReload || isCharge {
+                                        Task {
+                                            await postListViewModel.populateData()
+                                            isReload = false
+                                            isCharge = true
+                                        }
                                     }
                                 }
+                            ForEach(0..<2, id: \.self) { _ in
+                                RowPostView(postContent: Post.sample[1].body, isFavorite: false)
+                                    .redactShimmer(condition: true)
                             }
-                        ForEach(0..<2, id: \.self) { _ in
-                            RowPostView(postContent: Post.sample[1].body, isFavorite: false)
-                                .redactShimmer(condition: true)
                         }
+                        
                     }
-                    
+                    .listStyle(.plain)
+                    FloatingActionButtomView()
                 }
-                .listStyle(.plain)
-                .onAppear(){
-                    
-                }
+                
                 
                 Button(
                     action: {

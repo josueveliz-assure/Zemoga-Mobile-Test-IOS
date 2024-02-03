@@ -36,7 +36,7 @@
 		FF84CB522B6C435B00080CAD /* DetailPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF84CB512B6C435B00080CAD /* DetailPostViewModel.swift */; };
 		FF87C6392B6D90980050FD9D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FF87C63B2B6D90980050FD9D /* Localizable.strings */; };
 		FF87C63E2B6DA57B0050FD9D /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF87C63D2B6DA57B0050FD9D /* Launch Screen.storyboard */; };
-		FF87C6402B6DBAC30050FD9D /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = FF87C63F2B6DBAC30050FD9D /* .gitignore */; };
+		FF87C6422B6DBC460050FD9D /* FloatingActionButtomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF87C6412B6DBC460050FD9D /* FloatingActionButtomView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,7 +88,7 @@
 		FF87C63A2B6D90980050FD9D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		FF87C63C2B6D90F40050FD9D /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		FF87C63D2B6DA57B0050FD9D /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
-		FF87C63F2B6DBAC30050FD9D /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		FF87C6412B6DBC460050FD9D /* FloatingActionButtomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingActionButtomView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,9 +148,9 @@
 				FF23CC302B697EED009E02BA /* Model */,
 				FF23CC022B6942AF009E02BA /* Zemoga_Mobile_Test_IOSApp.swift */,
 				FF23CC042B6942AF009E02BA /* ContentView.swift */,
+				FF87C63D2B6DA57B0050FD9D /* Launch Screen.storyboard */,
 				FF23CC062B6942B1009E02BA /* Assets.xcassets */,
 				FF23CC082B6942B1009E02BA /* Preview Content */,
-				FF87C63F2B6DBAC30050FD9D /* .gitignore */,
 			);
 			path = "Zemoga-Mobile-Test-IOS";
 			sourceTree = "<group>";
@@ -197,7 +197,7 @@
 				FF1DEF8A2B69919D006DF719 /* RowPostView.swift */,
 				FF5D13532B69A3C600D30897 /* DetailPostView.swift */,
 				FF07566A2B6C500A00EB9BC9 /* HomeView.swift */,
-				FF87C63D2B6DA57B0050FD9D /* Launch Screen.storyboard */,
+				FF87C6412B6DBC460050FD9D /* FloatingActionButtomView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -356,7 +356,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF87C6402B6DBAC30050FD9D /* .gitignore in Resources */,
 				FF23CC0A2B6942B1009E02BA /* Preview Assets.xcassets in Resources */,
 				FF87C6392B6D90980050FD9D /* Localizable.strings in Resources */,
 				FF87C63E2B6DA57B0050FD9D /* Launch Screen.storyboard in Resources */,
@@ -397,6 +396,7 @@
 				FF4B1E132B6A9CE400CC8A20 /* CustomNavLinkView.swift in Sources */,
 				FF84CB4C2B6C18F500080CAD /* PostListViewModel.swift in Sources */,
 				FF4B1E152B6AA18800CC8A20 /* CustomNavBarPreferencesKeys.swift in Sources */,
+				FF87C6422B6DBC460050FD9D /* FloatingActionButtomView.swift in Sources */,
 				FF1DEF8B2B69919D006DF719 /* RowPostView.swift in Sources */,
 				FF1DEF832B6985E0006DF719 /* ApiManager.swift in Sources */,
 				FF4B1E1F2B6B00CC00CC8A20 /* ButtonProperties.swift in Sources */,
