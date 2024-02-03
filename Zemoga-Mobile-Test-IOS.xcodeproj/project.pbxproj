@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		FF07566B2B6C500A00EB9BC9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF07566A2B6C500A00EB9BC9 /* HomeView.swift */; };
+		FF1C67612B6E8987007EB2D4 /* CreatePostFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1C67602B6E8987007EB2D4 /* CreatePostFormView.swift */; };
+		FF1C67632B6E8F4F007EB2D4 /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1C67622B6E8F4F007EB2D4 /* ModalView.swift */; };
 		FF1DEF832B6985E0006DF719 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1DEF822B6985E0006DF719 /* ApiManager.swift */; };
 		FF1DEF852B698C5F006DF719 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1DEF842B698C5F006DF719 /* Post.swift */; };
 		FF1DEF872B698CF0006DF719 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1DEF862B698CF0006DF719 /* Comment.swift */; };
@@ -58,6 +60,8 @@
 
 /* Begin PBXFileReference section */
 		FF07566A2B6C500A00EB9BC9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		FF1C67602B6E8987007EB2D4 /* CreatePostFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostFormView.swift; sourceTree = "<group>"; };
+		FF1C67622B6E8F4F007EB2D4 /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
 		FF1DEF822B6985E0006DF719 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 		FF1DEF842B698C5F006DF719 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		FF1DEF862B698CF0006DF719 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
@@ -196,8 +200,10 @@
 				FF4B1E092B6A8BAC00CC8A20 /* Custom */,
 				FF1DEF8A2B69919D006DF719 /* RowPostView.swift */,
 				FF5D13532B69A3C600D30897 /* DetailPostView.swift */,
-				FF07566A2B6C500A00EB9BC9 /* HomeView.swift */,
 				FF87C6412B6DBC460050FD9D /* FloatingActionButtomView.swift */,
+				FF1C67602B6E8987007EB2D4 /* CreatePostFormView.swift */,
+				FF1C67622B6E8F4F007EB2D4 /* ModalView.swift */,
+				FF07566A2B6C500A00EB9BC9 /* HomeView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -400,6 +406,8 @@
 				FF1DEF8B2B69919D006DF719 /* RowPostView.swift in Sources */,
 				FF1DEF832B6985E0006DF719 /* ApiManager.swift in Sources */,
 				FF4B1E1F2B6B00CC00CC8A20 /* ButtonProperties.swift in Sources */,
+				FF1C67612B6E8987007EB2D4 /* CreatePostFormView.swift in Sources */,
+				FF1C67632B6E8F4F007EB2D4 /* ModalView.swift in Sources */,
 				FF23CC032B6942AF009E02BA /* Zemoga_Mobile_Test_IOSApp.swift in Sources */,
 				FF4B1E0D2B6A903000CC8A20 /* CustomNavBarContainerView.swift in Sources */,
 				FF1DEF852B698C5F006DF719 /* Post.swift in Sources */,

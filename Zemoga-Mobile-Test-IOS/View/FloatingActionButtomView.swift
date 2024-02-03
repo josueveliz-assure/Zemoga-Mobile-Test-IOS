@@ -8,15 +8,17 @@
 import SwiftUI
 
 struct FloatingActionButtomView: View {
+    @Binding var toogle: Bool
+    
     var body: some View {
         VStack {
             Spacer()
             HStack {
                 Spacer()
                 Button(action: {
-                    
+                    toogle.toggle()
                 }, label: {
-                    Image(systemName: "plus")
+                    Image(systemName: "doc.badge.plus")
                         .font(.largeTitle)
                         .frame(width: 70, height: 70)
                         .background(CustomColor(hex: "#27AE60").color)
@@ -31,5 +33,5 @@ struct FloatingActionButtomView: View {
 }
 
 #Preview {
-    FloatingActionButtomView()
+    FloatingActionButtomView(toogle: .constant(true))
 }
