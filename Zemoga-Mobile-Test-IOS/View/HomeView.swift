@@ -19,6 +19,7 @@ struct HomeView: View {
     
     @State private var showingAlert = false
     @State private var showingLateralAlert = false
+    @State private var showingSqueleton = true
     @State private var postIdToDelete: Int = 0
     
     var body: some View {
@@ -34,7 +35,9 @@ struct HomeView: View {
                 .background(.gray.opacity(0.01))
                 .clipShape(RoundedRectangle(cornerRadius: 0))
                 .onChange(of: selectedTab) {
-                    print("Selected tab: \(selectedTab)")
+                    postListViewModel.isFavoriteFilterActive = selectedTab == 1
+                    postListViewModel.filterPost()
+                    showingSqueleton = selectedTab == 0
                 }
                 
                 ZStack {
@@ -99,7 +102,7 @@ struct HomeView: View {
                             
                         }
                         
-                        if !isDeleted {
+                        if showingSqueleton && !isDeleted {
                             RowPostView(postContent: Post.sample[0].body, isFavorite: false)
                                 .redactShimmer(condition: true)
                                 .onAppear {
@@ -114,6 +117,13 @@ struct HomeView: View {
                             ForEach(0..<2, id: \.self) { _ in
                                 RowPostView(postContent: Post.sample[1].body, isFavorite: false)
                                     .redactShimmer(condition: true)
+                            }
+                        } else {
+                            if postListViewModel.posts.isEmpty {
+                                Text("no-data")
+                                    .font(.title2)
+                                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                                    .padding()
                             }
                         }
                         
@@ -141,6 +151,7 @@ struct HomeView: View {
                         message: Text("question-delete-all"),
                         primaryButton: .destructive(Text("delete-text")) {
                             postListViewModel.deleteData()
+                            showingSqueleton = false
                             isDeleted = true
                         },
                         secondaryButton: .cancel()
@@ -158,8 +169,9 @@ struct HomeView: View {
                         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                             Task {
                                 isReload = true
-                                isDeleted = false
+                                showingSqueleton = true
                                 isCharge = false
+                                isDeleted = false
                                 await postListViewModel.reload()
                                 isReload = false
                             }

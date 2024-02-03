@@ -23,3 +23,5 @@
 
 "delete-post" = "Eliminar Publicación";
 "question-delete-post %@" = "¿Estás seguro de que quieres eliminar la publicación \"%@\"?";
+
+"no-data" = "No hay publicaciones";
