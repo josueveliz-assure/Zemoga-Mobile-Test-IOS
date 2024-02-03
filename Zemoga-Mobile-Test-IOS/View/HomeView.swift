@@ -12,10 +12,12 @@ struct HomeView: View {
     
     @Bindable private var postListViewModel = PostListViewModel()
     private var detailPostViewModel = DetailPostViewModel()
+    
     @State private var isFavorite = false
     @State private var isDeleted = false
     @State private var isReload = false
     @State private var isCharge = false
+    
     @State private var showingAlert = false
     @State private var showingLateralAlert = false
     @State private var postIdToDelete: Int = 0

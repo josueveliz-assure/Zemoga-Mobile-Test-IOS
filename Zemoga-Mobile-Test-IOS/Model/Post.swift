@@ -26,3 +26,13 @@ struct Post: Codable {
         Post(userID: 1, id: 6, title: "dolorem eum magni eos aperiam quia", body: "ut aspernatur corporis harum nihil quis provident sequi\nmollitia nobis et doloremque molestiae", isFavorite: true),
     ]
 }
+
+struct NewPost: Codable {
+    let userID: Int
+    let title, body: String
+
+    enum CodingKeys: String, CodingKey {
+        case userID = "userId"
+        case title, body
+    }
+}

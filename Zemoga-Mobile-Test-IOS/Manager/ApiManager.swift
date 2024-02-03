@@ -16,13 +16,19 @@ class ApiManager {
         return NetworkReachabilityManager()!.isReachable
     }
     
-    private func request<T: Decodable>(url: String, completion: @escaping (Result<T, Error>) -> Void) {
+    private func request<T: Decodable>(
+        url: String,
+        method: HTTPMethod = .get,
+        parameters: Parameters? = nil,
+        headers: HTTPHeaders? = nil,
+        completion: @escaping (Result<T, Error>) -> Void)
+    {
         guard isConnected else {
             completion(.failure(NSError(domain: "", code: -1, userInfo: [NSLocalizedDescriptionKey: "No internet connection"])))
             return
         }
         
-        AF.request(url).validate().responseDecodable(of: T.self) { response in
+        AF.request(url, method: method, parameters: parameters, encoding: JSONEncoding.default, headers: headers).validate().responseDecodable(of: T.self) { response in
             switch response.result {
             case .success(let data):
                 completion(.success(data))
@@ -46,4 +52,19 @@ class ApiManager {
         let url = "\(endpoint)/users/\(userId)"
         request(url: url, completion: completion)
     }
+    
+    func removePost(postId: Int, completion: @escaping (Result<EmptyResponse, Error>) -> Void) {
+        let url = "\(endpoint)/posts/\(postId)"
+        request(url: url, method: .delete, completion: completion)
+    }
+    
+    func addPost(post: NewPost, completion: @escaping (Result<Post, Error>) -> Void) {
+        let url = "\(endpoint)/posts"
+        let headers: HTTPHeaders = ["Content-type": "application/json; charset=UTF-8"]
+        let parameters = ["title": post.title, "body": post.body, "userId": post.userID] as [String : Any]
+        
+        request(url: url, method: .post, parameters: parameters, headers: headers, completion: completion)
+    }
 }
+
+struct EmptyResponse: Decodable {}
