@@ -52,9 +52,9 @@ struct HomeView: View {
                                     .task {
                                         await detailPostViewModel.getDetailData(userId: post.userID, postId: post.id)
                                     }
+                                    .customNavigationTitle("home-individual-title")
                                     .customNavigationBackgroundColor("#27AE60")
                                     .customNavigationForegroundColor("#FBFCFC")
-                                    .customNavigationTitle("home-title")
                                     .customNavigationButtonProperties(
                                         ButtonProperties(
                                             systemImage: post.isFavorite ? "star.fill" : "star",

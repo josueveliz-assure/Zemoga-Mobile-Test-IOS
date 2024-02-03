@@ -14,6 +14,7 @@
 "tab-option-favorites" = "Favorites";
 
 "home-title" = "Posts";
+"home-individual-title" = "Post";
 
 "delete-all" = "Delete All";
 "question-delete-all" = "Are you sure you want to delete all the posts?";
