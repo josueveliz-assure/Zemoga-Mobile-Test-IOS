@@ -1,0 +1,36 @@
+/*
+  Localizable.strings
+  Zemoga-Mobile-Test-IOS
+
+  Created by Josue Veliz on 2/2/24.
+  
+*/
+
+"detail-description" = "Description";
+"detail-user" = "User";
+"detail-comments" = "Comments";
+
+"tab-option-all" = "All";
+"tab-option-favorites" = "Favorites";
+
+"home-title" = "Posts";
+"home-individual-title" = "Post";
+
+"delete-all" = "Delete All";
+"question-delete-all" = "Are you sure you want to delete all the posts?";
+
+"delete-text" = "Delete";
+
+"delete-post" = "Delete Post";
+"question-delete-post %@" = "Are you sure you want to delete this post \"%@\"?";
+
+"no-data" = "No data available";
+
+"no-data-comments" = "No comments available";
+
+"save" = "Save";
+
+"post-content" = "Post Content";
+
+"title" = "Title";
+"content" = "Content";

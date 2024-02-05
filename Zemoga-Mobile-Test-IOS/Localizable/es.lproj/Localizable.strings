@@ -1,0 +1,36 @@
+/*
+  Localizable.strings
+  Zemoga-Mobile-Test-IOS
+
+  Created by Josue Veliz on 2/2/24.
+  
+*/
+
+"detail-description" = "Descripcion";
+"detail-user" = "Usuario";
+"detail-comments" = "Comentarios";
+
+"tab-option-all" = "Todo";
+"tab-option-favorites" = "Favoritos";
+
+"home-title" = "Publicaciones";
+"home-individual-title" = "Publicación";
+
+"delete-all" = "Eliminar Todo";
+"question-delete-all" = "¿Estás seguro de que quieres eliminar todas las publicaciones?";
+
+"delete-text" = "Eliminar";
+
+"delete-post" = "Eliminar Publicación";
+"question-delete-post %@" = "¿Estás seguro de que quieres eliminar la publicación \"%@\"?";
+
+"no-data" = "No hay publicaciones";
+
+"no-data-comments" = "No hay comentarios";
+
+"save" = "Guadar";
+
+"post-content" = "Contenido de Publicación";
+
+"title" = "Titulo";
+"content" = "Contenido";

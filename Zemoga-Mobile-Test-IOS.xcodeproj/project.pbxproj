@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF07566B2B6C500A00EB9BC9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF07566A2B6C500A00EB9BC9 /* HomeView.swift */; };
+		FF1C67612B6E8987007EB2D4 /* CreatePostFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1C67602B6E8987007EB2D4 /* CreatePostFormView.swift */; };
+		FF1C67632B6E8F4F007EB2D4 /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1C67622B6E8F4F007EB2D4 /* ModalView.swift */; };
 		FF1DEF832B6985E0006DF719 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1DEF822B6985E0006DF719 /* ApiManager.swift */; };
 		FF1DEF852B698C5F006DF719 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1DEF842B698C5F006DF719 /* Post.swift */; };
 		FF1DEF872B698CF0006DF719 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1DEF862B698CF0006DF719 /* Comment.swift */; };
@@ -27,9 +30,15 @@
 		FF4B1E132B6A9CE400CC8A20 /* CustomNavLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4B1E122B6A9CE400CC8A20 /* CustomNavLinkView.swift */; };
 		FF4B1E152B6AA18800CC8A20 /* CustomNavBarPreferencesKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4B1E142B6AA18800CC8A20 /* CustomNavBarPreferencesKeys.swift */; };
 		FF4B1E172B6AC5B200CC8A20 /* CustomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4B1E162B6AC5B200CC8A20 /* CustomColor.swift */; };
-		FF4B1E192B6AD8A600CC8A20 /* ListPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4B1E182B6AD8A600CC8A20 /* ListPostView.swift */; };
 		FF4B1E1F2B6B00CC00CC8A20 /* ButtonProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4B1E1E2B6B00CC00CC8A20 /* ButtonProperties.swift */; };
 		FF5D13542B69A3C600D30897 /* DetailPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5D13532B69A3C600D30897 /* DetailPostView.swift */; };
+		FF84CB482B6BEA8C00080CAD /* Shimmer in Frameworks */ = {isa = PBXBuildFile; productRef = FF84CB472B6BEA8C00080CAD /* Shimmer */; };
+		FF84CB4C2B6C18F500080CAD /* PostListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF84CB4B2B6C18F500080CAD /* PostListViewModel.swift */; };
+		FF84CB4E2B6C20A100080CAD /* RedactedShimerViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF84CB4D2B6C20A100080CAD /* RedactedShimerViewModifier.swift */; };
+		FF84CB522B6C435B00080CAD /* DetailPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF84CB512B6C435B00080CAD /* DetailPostViewModel.swift */; };
+		FF87C6392B6D90980050FD9D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FF87C63B2B6D90980050FD9D /* Localizable.strings */; };
+		FF87C63E2B6DA57B0050FD9D /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF87C63D2B6DA57B0050FD9D /* Launch Screen.storyboard */; };
+		FF87C6422B6DBC460050FD9D /* FloatingActionButtomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF87C6412B6DBC460050FD9D /* FloatingActionButtomView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +59,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FF07566A2B6C500A00EB9BC9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		FF1C67602B6E8987007EB2D4 /* CreatePostFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostFormView.swift; sourceTree = "<group>"; };
+		FF1C67622B6E8F4F007EB2D4 /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
 		FF1DEF822B6985E0006DF719 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 		FF1DEF842B698C5F006DF719 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		FF1DEF862B698CF0006DF719 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
@@ -72,9 +84,15 @@
 		FF4B1E122B6A9CE400CC8A20 /* CustomNavLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavLinkView.swift; sourceTree = "<group>"; };
 		FF4B1E142B6AA18800CC8A20 /* CustomNavBarPreferencesKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavBarPreferencesKeys.swift; sourceTree = "<group>"; };
 		FF4B1E162B6AC5B200CC8A20 /* CustomColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColor.swift; sourceTree = "<group>"; };
-		FF4B1E182B6AD8A600CC8A20 /* ListPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPostView.swift; sourceTree = "<group>"; };
 		FF4B1E1E2B6B00CC00CC8A20 /* ButtonProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonProperties.swift; sourceTree = "<group>"; };
 		FF5D13532B69A3C600D30897 /* DetailPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPostView.swift; sourceTree = "<group>"; };
+		FF84CB4B2B6C18F500080CAD /* PostListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewModel.swift; sourceTree = "<group>"; };
+		FF84CB4D2B6C20A100080CAD /* RedactedShimerViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedactedShimerViewModifier.swift; sourceTree = "<group>"; };
+		FF84CB512B6C435B00080CAD /* DetailPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPostViewModel.swift; sourceTree = "<group>"; };
+		FF87C63A2B6D90980050FD9D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FF87C63C2B6D90F40050FD9D /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FF87C63D2B6DA57B0050FD9D /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		FF87C6412B6DBC460050FD9D /* FloatingActionButtomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingActionButtomView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF84CB482B6BEA8C00080CAD /* Shimmer in Frameworks */,
 				FF23CC2E2B697CD4009E02BA /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -133,6 +152,7 @@
 				FF23CC302B697EED009E02BA /* Model */,
 				FF23CC022B6942AF009E02BA /* Zemoga_Mobile_Test_IOSApp.swift */,
 				FF23CC042B6942AF009E02BA /* ContentView.swift */,
+				FF87C63D2B6DA57B0050FD9D /* Launch Screen.storyboard */,
 				FF23CC062B6942B1009E02BA /* Assets.xcassets */,
 				FF23CC082B6942B1009E02BA /* Preview Content */,
 			);
@@ -179,8 +199,11 @@
 			children = (
 				FF4B1E092B6A8BAC00CC8A20 /* Custom */,
 				FF1DEF8A2B69919D006DF719 /* RowPostView.swift */,
-				FF4B1E182B6AD8A600CC8A20 /* ListPostView.swift */,
 				FF5D13532B69A3C600D30897 /* DetailPostView.swift */,
+				FF87C6412B6DBC460050FD9D /* FloatingActionButtomView.swift */,
+				FF1C67602B6E8987007EB2D4 /* CreatePostFormView.swift */,
+				FF1C67622B6E8F4F007EB2D4 /* ModalView.swift */,
+				FF07566A2B6C500A00EB9BC9 /* HomeView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -188,6 +211,8 @@
 		FF23CC322B697F00009E02BA /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				FF84CB4B2B6C18F500080CAD /* PostListViewModel.swift */,
+				FF84CB512B6C435B00080CAD /* DetailPostViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -195,6 +220,7 @@
 		FF23CC332B697F42009E02BA /* Localizable */ = {
 			isa = PBXGroup;
 			children = (
+				FF87C63B2B6D90980050FD9D /* Localizable.strings */,
 			);
 			path = Localizable;
 			sourceTree = "<group>";
@@ -218,6 +244,7 @@
 				FF4B1E142B6AA18800CC8A20 /* CustomNavBarPreferencesKeys.swift */,
 				FF4B1E162B6AC5B200CC8A20 /* CustomColor.swift */,
 				FF4B1E1E2B6B00CC00CC8A20 /* ButtonProperties.swift */,
+				FF84CB4D2B6C20A100080CAD /* RedactedShimerViewModifier.swift */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -240,6 +267,7 @@
 			name = "Zemoga-Mobile-Test-IOS";
 			packageProductDependencies = (
 				FF23CC2D2B697CD4009E02BA /* Alamofire */,
+				FF84CB472B6BEA8C00080CAD /* Shimmer */,
 			);
 			productName = "Zemoga-Mobile-Test-IOS";
 			productReference = FF23CBFF2B6942AF009E02BA /* Zemoga-Mobile-Test-IOS.app */;
@@ -311,10 +339,12 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = FF23CBF62B6942AF009E02BA;
 			packageReferences = (
 				FF23CC2C2B697CD4009E02BA /* XCRemoteSwiftPackageReference "Alamofire" */,
+				FF84CB462B6BEA8C00080CAD /* XCRemoteSwiftPackageReference "SwiftUI-Shimmer" */,
 			);
 			productRefGroup = FF23CC002B6942AF009E02BA /* Products */;
 			projectDirPath = "";
@@ -333,6 +363,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF23CC0A2B6942B1009E02BA /* Preview Assets.xcassets in Resources */,
+				FF87C6392B6D90980050FD9D /* Localizable.strings in Resources */,
+				FF87C63E2B6DA57B0050FD9D /* Launch Screen.storyboard in Resources */,
 				FF23CC072B6942B1009E02BA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -360,21 +392,27 @@
 			files = (
 				FF1DEF872B698CF0006DF719 /* Comment.swift in Sources */,
 				FF4B1E112B6A9C5200CC8A20 /* AppNavBarView.swift in Sources */,
+				FF84CB4E2B6C20A100080CAD /* RedactedShimerViewModifier.swift in Sources */,
 				FF23CC052B6942AF009E02BA /* ContentView.swift in Sources */,
+				FF07566B2B6C500A00EB9BC9 /* HomeView.swift in Sources */,
 				FF5D13542B69A3C600D30897 /* DetailPostView.swift in Sources */,
 				FF1DEF892B698E39006DF719 /* User.swift in Sources */,
 				FF4B1E172B6AC5B200CC8A20 /* CustomColor.swift in Sources */,
-				FF4B1E192B6AD8A600CC8A20 /* ListPostView.swift in Sources */,
 				FF4B1E0F2B6A9A0800CC8A20 /* CustomNavView.swift in Sources */,
 				FF4B1E132B6A9CE400CC8A20 /* CustomNavLinkView.swift in Sources */,
+				FF84CB4C2B6C18F500080CAD /* PostListViewModel.swift in Sources */,
 				FF4B1E152B6AA18800CC8A20 /* CustomNavBarPreferencesKeys.swift in Sources */,
+				FF87C6422B6DBC460050FD9D /* FloatingActionButtomView.swift in Sources */,
 				FF1DEF8B2B69919D006DF719 /* RowPostView.swift in Sources */,
 				FF1DEF832B6985E0006DF719 /* ApiManager.swift in Sources */,
 				FF4B1E1F2B6B00CC00CC8A20 /* ButtonProperties.swift in Sources */,
+				FF1C67612B6E8987007EB2D4 /* CreatePostFormView.swift in Sources */,
+				FF1C67632B6E8F4F007EB2D4 /* ModalView.swift in Sources */,
 				FF23CC032B6942AF009E02BA /* Zemoga_Mobile_Test_IOSApp.swift in Sources */,
 				FF4B1E0D2B6A903000CC8A20 /* CustomNavBarContainerView.swift in Sources */,
 				FF1DEF852B698C5F006DF719 /* Post.swift in Sources */,
 				FF4B1E0B2B6A8BBF00CC8A20 /* CustomNavBarView.swift in Sources */,
+				FF84CB522B6C435B00080CAD /* DetailPostViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,12 +448,25 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		FF87C63B2B6D90980050FD9D /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF87C63A2B6D90980050FD9D /* en */,
+				FF87C63C2B6D90F40050FD9D /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		FF23CC212B6942B2009E02BA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -479,6 +530,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -543,6 +595,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -571,6 +624,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -708,6 +762,14 @@
 				minimumVersion = 5.8.1;
 			};
 		};
+		FF84CB462B6BEA8C00080CAD /* XCRemoteSwiftPackageReference "SwiftUI-Shimmer" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/markiv/SwiftUI-Shimmer";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.4.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -715,6 +777,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = FF23CC2C2B697CD4009E02BA /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		FF84CB472B6BEA8C00080CAD /* Shimmer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FF84CB462B6BEA8C00080CAD /* XCRemoteSwiftPackageReference "SwiftUI-Shimmer" */;
+			productName = Shimmer;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
